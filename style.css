@@ -1,0 +1,422 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  main: "";
+  main: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end css reset */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+@media screen and (min-width: 700px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  .container {
+    background-color: #292f3f;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    overflow: auto;
+    top: 50%;
+    margin-top: 39px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .header {
+    left: 25%;
+    right: 25%;
+    height: 40px;
+    background-color: #292f3f;
+    position: fixed;
+    z-index: 3;
+  }
+  .header h1 {
+    font-weight: bold;
+    font-family: Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  form input {
+    height: 50px;
+    top: 30px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    margin-top: 25px;
+    background-color: #ffffff;
+  }
+  button {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    background-color: #78b9fe;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    top: 117px;
+    border: #03a9f1 3px solid;
+  }
+  button:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    background-color: #03a9f1;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    top: 117px;
+    cursor: pointer;
+  }
+  .container-catatan {
+    position: absolute;
+    color: white;
+    width: 85%;
+    text-align: center;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .container-catatan .catatan {
+    background-color: #7a8194;
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    left: 60%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan:hover {
+    background-color: #b347ea;
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    left: 60%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container-catatan .catatan2 {
+    background-color: #373e4e;
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan2:hover {
+    background-color: #b347ea;
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transform: translate(-50%, -50%);
+  }
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+@media screen and (max-width: 700px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #292f3f;
+    overflow: auto;
+  }
+  .header {
+    width: 100%;
+    height: 40px;
+    background-color: #292f3f;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+  }
+  .header h1 {
+    font-weight: bold;
+    font-family: Arial, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+  form input {
+    height: 50px;
+    top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    margin-top: 25px;
+    background-color: #ffffff;
+  }
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    background-color: #78b9fe;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    top: 117px;
+    border: #03a9f1 3px solid;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  button:hover {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85%;
+    background-color: #03a9f1;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    top: 117px;
+    cursor: pointer;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container-catatan {
+    position: absolute;
+    color: white;
+    width: 85%;
+    text-align: center;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan {
+    background-color: #7a8194;
+    margin-top: 15px;
+    height: 50px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    left: 60%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan:hover {
+    background-color: #b347ea;
+    margin-top: 15px;
+    height: 50px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    left: 60%;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container-catatan .catatan2 {
+    background-color: #373e4e;
+    margin-top: 15px;
+    height: 50px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan2:hover {
+    background-color: #b347ea;
+    margin-top: 15px;
+    height: 50px;
+    width: 40%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container-catatan .catatan2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font: roboto;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
